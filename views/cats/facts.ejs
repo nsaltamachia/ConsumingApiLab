@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+  <h1>Here're Your Cat Facts</h1>
+  <a href="/cats/fact">Click here for another fact!</a>
+  &nbsp;| &nbsp;
+  <a href="/">Go Back</a>
+  <div class="container">
+    <ul>
+      <% facts.forEach(fact => { %>
+        <li>
+          <div class="fact-container">
+            <%= fact %>
+          </div>
+        </li>
+        <%})%>
+    </ul>
+  </div>
+  
+
+</body>
+</html>

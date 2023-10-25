@@ -1,7 +1,13 @@
 var express = require('express');
 var router = express.Router();
+const catsCtrl = require("../controllers/cats")
 
-router.get("/cats/fact")
+
+/* GET users listing. */
+router.get('/fact', catsCtrl.fact);
+
+router.get("/facts", catsCtrl.facts);
+
 
 
 
